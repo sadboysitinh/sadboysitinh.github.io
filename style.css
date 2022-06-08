@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', Helvetica, 'San Francisco';
+    box-sizing: content-box;
+    transition: 0.3s all ease;
+}
+
+html,
+body {
+    height: 100%;
+    background: #e8e8e8;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #242526;
+}
+
+#container {
+    background: #FFFFFF;
+    height: 100%;
+    background: transparent;
+}
+
+.alert {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 0px;
+    font-size: 14px;
+    color: white;
+    background: red;
+}
+
+.banner {
+    display: block;
+}
+
+#main-content {
+    height: 100%;
+    padding-top: 5px;
+}
+
+.languages {
+    width: fit-content;
+    margin: 5px auto;
+    color: #b0b3b8;
+    font-size: 14px;
+}
+
+.languages a {
+    color: #4599ff;
+    text-decoration: none;
+}
+
+.controls {
+    color: white;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    border: 0;
+    width: 85%;
+    background: transparent;
+    padding: 6px;
+    border-bottom: 1px solid #74777a;
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 2px solid #2d88ff;
+}
+
+button {
+    border: 0;
+    width: 85%;
+    padding: 8px;
+    font-weight: bold;
+    background: #2d88ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-pass {
+    color: #2d88ff;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+.choice {
+    font-size: 14px;
+    color: #B0B3B8;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.register {
+    width: fit-content;
+    background: #31a24c;
+}
