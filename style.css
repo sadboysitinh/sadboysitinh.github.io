@@ -31,8 +31,8 @@ body {
 
 #container {
     display: none;
-    background: #FFFFFF;
-    background: transparent;
+    background: #242526;
+    /* background: transparent; */
 }
 
 .alert {
