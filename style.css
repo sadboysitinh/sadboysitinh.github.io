@@ -8,16 +8,30 @@
 
 html,
 body {
-    height: 100%;
     background: #e8e8e8;
     max-width: 500px;
     margin: 0 auto;
     background: #242526;
 }
 
+.btnMoveToLogin {
+    position: absolute;
+    background: #2d88ff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+
 #container {
+    display: none;
     background: #FFFFFF;
-    height: 100%;
     background: transparent;
 }
 
@@ -25,7 +39,7 @@ body {
     display: none;
     width: 100%;
     box-sizing: border-box;
-    padding: 6px 0px;
+    padding: 6px 6px;
     font-size: 14px;
     color: white;
     background: red;
@@ -35,8 +49,11 @@ body {
     display: block;
 }
 
+img {
+    border-radius: 0px 0px 6px 6px;
+}
+
 #main-content {
-    height: 100%;
     padding-top: 5px;
 }
 
@@ -66,6 +83,7 @@ form {
 input {
     border: 0;
     width: 85%;
+    margin: 20px auto !important;
     background: transparent;
     padding: 6px;
     border-bottom: 1px solid #74777a;
@@ -84,6 +102,7 @@ button {
     background: #2d88ff;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .reset-pass {
